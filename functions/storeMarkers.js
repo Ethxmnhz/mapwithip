@@ -12,7 +12,7 @@ exports.handler = cors(async (event, context) => {
     return {
       statusCode: 200,
       headers: {
-        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Origin': 'https://ethxmnhz.github.io',
         'Access-Control-Allow-Methods': 'OPTIONS, POST',
         'Access-Control-Allow-Headers': 'Content-Type',
       },
@@ -23,7 +23,7 @@ exports.handler = cors(async (event, context) => {
     return {
       statusCode: 500,
       headers: {
-        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Origin': 'https://ethxmnhz.github.io',
         'Access-Control-Allow-Methods': 'OPTIONS, POST',
         'Access-Control-Allow-Headers': 'Content-Type',
       },

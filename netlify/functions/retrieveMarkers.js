@@ -10,8 +10,8 @@ exports.handler = cors(async (event, context) => {
       statusCode: 200,
       headers: {
         'Access-Control-Allow-Origin': 'https://magical-tarsier-f58440.netlify.app',
-        'Access-Control-Allow-Methods': 'OPTIONS, POST, GET',
-        'Access-Control-Allow-Headers': 'Content-Type',
+        'Access-Control-Allow-Methods': 'OPTIONS,POST, GET, PATCH, DELETE ',
+        'Access-Control-Allow-Headers': '*',
       },
       body: JSON.stringify({ success:true }),
     };

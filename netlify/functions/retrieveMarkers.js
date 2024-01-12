@@ -8,7 +8,7 @@ exports.handler = cors(async (event, context) => {
     return {
       statusCode: 200,
       headers: {
-        'Access-Control-Allow-Origin': 'https://ethxmnhz.github.io',
+        'Access-Control-Allow-Origin': 'https://magical-tarsier-f58440.netlify.app',
         'Access-Control-Allow-Methods': 'OPTIONS, POST, GET',
         'Access-Control-Allow-Headers': 'Content-Type',
       },

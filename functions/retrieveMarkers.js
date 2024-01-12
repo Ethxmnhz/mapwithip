@@ -9,10 +9,10 @@ exports.handler = cors(async (event, context) => {
       statusCode: 200,
       headers: {
         'Access-Control-Allow-Origin': 'https://ethxmnhz.github.io',
-        'Access-Control-Allow-Methods': 'OPTIONS, GET',
+        'Access-Control-Allow-Methods': 'OPTIONS, POST, GET',
         'Access-Control-Allow-Headers': 'Content-Type',
       },
-      body: JSON.stringify({ markers }),
+      body: JSON.stringify({ success:true }),
     };
   } catch (error) {
     console.error(error);
@@ -20,7 +20,7 @@ exports.handler = cors(async (event, context) => {
       statusCode: 500,
       headers: {
         'Access-Control-Allow-Origin': 'https://ethxmnhz.github.io',
-        'Access-Control-Allow-Methods': 'OPTIONS, GET',
+        'Access-Control-Allow-Methods': 'OPTIONS, POST, GET',
         'Access-Control-Allow-Headers': 'Content-Type',
       },
       body: JSON.stringify({ error: 'Internal Server Error' }),

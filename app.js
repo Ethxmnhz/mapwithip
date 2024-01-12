@@ -218,7 +218,7 @@ function toggleRemoveContactForm() {
 
 async function storeMarkersInDatabase() {
     try {
-      const response = await fetch('http://localhost:3000/api/storeMarkers', {
+      const response = await fetch('https://chic-souffle-80045e.netlify.app/.netlify/functions/storeMarkers', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -234,11 +234,11 @@ async function storeMarkersInDatabase() {
     } catch (error) {
       console.error(`Error storing markers: ${error.message}`);
     }
-  }
-  
-  async function retrieveMarkersFromDatabase() {
+}
+
+async function retrieveMarkersFromDatabase() {
     try {
-      const response = await fetch('http://localhost:3000/api/retrieveMarkers');
+      const response = await fetch('https://chic-souffle-80045e.netlify.app/.netlify/functions/retrieveMarkers');
   
       if (!response.ok) {
         throw new Error(`Failed to retrieve markers. Status: ${response.status}`);
@@ -263,5 +263,4 @@ async function storeMarkersInDatabase() {
     } catch (error) {
       console.error(`Error retrieving markers: ${error.message}`);
     }
-  }
-  
+}

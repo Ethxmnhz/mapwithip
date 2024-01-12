@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 const Marker = require('./Marker');
-const cors = require('cors')();
+const cors = require('cors')({ origin: '*' });
+
 
 exports.handler = cors(async (event, context) => {
   try {
